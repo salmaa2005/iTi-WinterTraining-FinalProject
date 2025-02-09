@@ -183,12 +183,54 @@ public class Menu
                 }
                 else if (tableChoice == 2)
                 {
+                    Console.WriteLine("BE CAREFUL! DELETING A DEPARTMENT WILL DELETE ALL ASSOCIATED EMPLOYEES!!");
                     Console.WriteLine("Here are the Departments, Choose A Department ID To Delete:");
                     _department.Display();
                     int departmentId = ValidateIdExists("Enter Department ID to delete: ", "Departments", "DepartmentID");
-                    _department.Delete(departmentId);
+
+                    Console.Write($"Are you sure you want to delete Department ID {departmentId} and all associated employees? (yes/no): ");
+                    string confirmation = Console.ReadLine();
+
+                    if (string.Equals(confirmation, "yes", StringComparison.OrdinalIgnoreCase))
+                    {
+                        using (var connection = new SqlConnection(_database._connectionString))
+                        {
+                            connection.Open();
+                            using (var transaction = connection.BeginTransaction())
+                            {
+                 
+                                using (var deleteEmployeesCommand = new SqlCommand("DELETE FROM Employees WHERE DepartmentID = @DepartmentID", connection, transaction))
+                                {
+                                    deleteEmployeesCommand.Parameters.AddWithValue("@DepartmentID", departmentId);
+                                    int employeesDeleted = deleteEmployeesCommand.ExecuteNonQuery();
+                                    Console.WriteLine($"{employeesDeleted} employees deleted.");
+                                }
+
+
+                                using (var deleteDepartmentCommand = new SqlCommand("DELETE FROM Departments WHERE DepartmentID = @DepartmentID", connection, transaction))
+                                {
+                                    deleteDepartmentCommand.Parameters.AddWithValue("@DepartmentID", departmentId);
+                                    int departmentDeleted = deleteDepartmentCommand.ExecuteNonQuery();
+
+                                    Console.WriteLine(departmentDeleted > 0
+                                        ? $"Department ID {departmentId} has been deleted."
+                                        : $"Department ID {departmentId} was not found or could not be deleted.");
+                                }
+
+                                transaction.Commit();
+                            }
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Deletion canceled.");
+                    }
                 }
+                Console.WriteLine("Press ENTER to return to the menu...");
+                Console.ReadLine();
+                ShowMenu();
                 break;
+
 
             case "Search":
                 if (tableChoice == 1)
@@ -213,19 +255,20 @@ public class Menu
                 }
                 break;
 
-            case "Display":
-                if (tableChoice == 1)
-                {
-                    _employee.Display();
-                }
-                else if (tableChoice == 2)
-                {
-                    _department.Display();
-                }
-                break;
+                case "Display":
+                    if (tableChoice == 1)
+                    {
+                        _employee.Display();
+                    }
+                    else if (tableChoice == 2)
+                    {
+                        _department.Display();
+                    }
+                 break;
         }
 
         Console.WriteLine("Press ENTER to return to the menu...");
         Console.ReadLine();
+        ShowMenu();
     }
 }

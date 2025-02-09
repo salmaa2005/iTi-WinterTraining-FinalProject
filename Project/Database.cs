@@ -4,7 +4,7 @@ using System.Data.SqlClient;
 
 public class Database
 {
-    private readonly string _connectionString;
+    public readonly string _connectionString;
 
     public Database(string connectionString)
     {

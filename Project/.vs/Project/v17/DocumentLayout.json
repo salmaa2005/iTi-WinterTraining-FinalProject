@@ -1,10 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\salma\\OneDrive\\Desktop\\C#\\FinalProject\\Project\\",
+  "WorkspaceRootPath": "C:\\Users\\salma\\iTi-WinterTraining-FinalProject\\Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{22FAB168-ABC0-4BFB-AE70-E46FD90AEC50}|Project.csproj|c:\\users\\salma\\onedrive\\desktop\\c#\\finalproject\\project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{22FAB168-ABC0-4BFB-AE70-E46FD90AEC50}|Project.csproj|c:\\users\\salma\\iti-wintertraining-finalproject\\project\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22FAB168-ABC0-4BFB-AE70-E46FD90AEC50}|Project.csproj|solutionrelative:menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22FAB168-ABC0-4BFB-AE70-E46FD90AEC50}|Project.csproj|c:\\users\\salma\\iti-wintertraining-finalproject\\project\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22FAB168-ABC0-4BFB-AE70-E46FD90AEC50}|Project.csproj|solutionrelative:database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22FAB168-ABC0-4BFB-AE70-E46FD90AEC50}|Project.csproj|c:\\users\\salma\\iti-wintertraining-finalproject\\project\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22FAB168-ABC0-4BFB-AE70-E46FD90AEC50}|Project.csproj|solutionrelative:employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22FAB168-ABC0-4BFB-AE70-E46FD90AEC50}|Project.csproj|c:\\users\\salma\\iti-wintertraining-finalproject\\project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{22FAB168-ABC0-4BFB-AE70-E46FD90AEC50}|Project.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22FAB168-ABC0-4BFB-AE70-E46FD90AEC50}|Project.csproj|c:\\users\\salma\\iti-wintertraining-finalproject\\project\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22FAB168-ABC0-4BFB-AE70-E46FD90AEC50}|Project.csproj|solutionrelative:department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,17 +30,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Database.cs",
+              "DocumentMoniker": "C:\\Users\\salma\\iTi-WinterTraining-FinalProject\\Project\\Database.cs",
+              "RelativeDocumentMoniker": "Database.cs",
+              "ToolTip": "C:\\Users\\salma\\iTi-WinterTraining-FinalProject\\Project\\Database.cs",
+              "RelativeToolTip": "Database.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T04:26:04.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\salma\\iTi-WinterTraining-FinalProject\\Project\\Employee.cs",
+              "RelativeDocumentMoniker": "Employee.cs",
+              "ToolTip": "C:\\Users\\salma\\iTi-WinterTraining-FinalProject\\Project\\Employee.cs",
+              "RelativeToolTip": "Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T04:26:03.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "C:\\Users\\salma\\iTi-WinterTraining-FinalProject\\Project\\Menu.cs",
+              "RelativeDocumentMoniker": "Menu.cs",
+              "ToolTip": "C:\\Users\\salma\\iTi-WinterTraining-FinalProject\\Project\\Menu.cs",
+              "RelativeToolTip": "Menu.cs",
+              "ViewState": "AgIAAMsAAAAAAAAAAAAUwOYAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T04:26:01.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Department.cs",
+              "DocumentMoniker": "C:\\Users\\salma\\iTi-WinterTraining-FinalProject\\Project\\Department.cs",
+              "RelativeDocumentMoniker": "Department.cs",
+              "ToolTip": "C:\\Users\\salma\\iTi-WinterTraining-FinalProject\\Project\\Department.cs",
+              "RelativeToolTip": "Department.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAwwCcAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T04:24:27.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\salma\\OneDrive\\Desktop\\C#\\FinalProject\\Project\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\salma\\iTi-WinterTraining-FinalProject\\Project\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\salma\\OneDrive\\Desktop\\C#\\FinalProject\\Project\\Program.cs",
+              "ToolTip": "C:\\Users\\salma\\iTi-WinterTraining-FinalProject\\Project\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-08T18:19:37.754Z",
               "EditorCaption": ""
